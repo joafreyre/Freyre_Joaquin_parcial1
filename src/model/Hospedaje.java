@@ -4,8 +4,8 @@ package model;
 import java.time.LocalDate;
 
 public class Hospedaje extends Servicio {
-    private String hospedaje; // Descripción del tipo de hospedaje (por ejemplo, "Cabaña").
-    private double precioPorNoche; // Precio base por noche.
+    private String hospedaje; // Descripción del tipo de hospedaje 
+    private double precioPorNoche; // Precio base por noche
 
     public Hospedaje(String codServicio, double porcentajeDescuento, boolean enPromocion, String hospedaje, double precioPorNoche) {
         super(codServicio, porcentajeDescuento, enPromocion);
@@ -23,7 +23,6 @@ public class Hospedaje extends Servicio {
         return precioFinal;
     }
 
-    // Getters (omitir setters para mantener la simplicidad)
     public String getHospedaje() {
         return hospedaje;
     }
